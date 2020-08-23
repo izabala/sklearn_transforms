@@ -14,7 +14,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
         data = X.copy()
         # Retornamos um novo dataframe sem as colunas indesejadas
         return data.drop(labels=self.columns, axis='columns')
-    
+"""    
 class ToVector(BaseEstimator, TransformerMixin):
     # To change to vectors for models that needs vectors
     def fit(self, X, y=None):
@@ -43,3 +43,4 @@ class ToVector(BaseEstimator, TransformerMixin):
             return X_vectors, y_vector
         # Devolvemos un nuevo dataframe de datos sin las columnas no deseadas
         return X_vectors
+"""
